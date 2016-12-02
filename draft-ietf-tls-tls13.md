@@ -937,7 +937,7 @@ If the client has not provided a sufficient "key_share" extension (e.g., it
 includes only DHE or ECDHE groups unacceptable to or unsupported by the
 server), the server corrects the mismatch with a HelloRetryRequest and
 the client needs to restart the handshake with an appropriate
-"key_share" extension, as shown in Figure 2.
+"key_share" extension, as shown in {{tls-restart}}.
 If no common cryptographic parameters can be negotiated,
 the server MUST abort the handshake with an appropriate alert.
 
